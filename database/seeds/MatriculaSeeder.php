@@ -27,5 +27,10 @@ class MatriculaSeeder extends Seeder
             "curso_id" => 2,
             "nota_id" => 4
         ]);
+        DB::table('matriculas')->insert([
+            "user_id" => 4,
+            "curso_id" => 4,
+            "nota_id" => 5
+        ]);
     }
 }

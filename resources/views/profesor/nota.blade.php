@@ -2,6 +2,7 @@
 @section('title','Docente')
 @section('content')
 <div class="container">
+    @if ($estudiantes->isNotEmpty())
     <h1>Apartado de notas</h1>
     <table class="table table-responsive-sm table-striped" id="table_notas-docente">
         <thead>
@@ -18,10 +19,11 @@
             </tr>
         </thead>
         <tbody>
+            @php($index = 1)
             @foreach ($estudiantes as $estudiante)
                 
             <tr>
-                <td>{{ $estudiante->id }}</td>
+                <td>{{ $index ++ }}</td>
                 <td>{{ $estudiante->nombre }}</td>
                 <td>{{ $estudiante->nota1 }}</td>
                 <td>{{ $estudiante->nota2 }}</td>
@@ -36,5 +38,15 @@
             @endforeach
         </tbody>
     </table>
+    @else
+    <div class="container">
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <p>No hay estudiantes inscritos</p>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>
+    @endif
 </div>
 @endsection

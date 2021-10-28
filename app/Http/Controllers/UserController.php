@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ValidateUsers;
 use App\User;
 use Illuminate\Http\Request;
 
@@ -39,20 +40,9 @@ class UserController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ValidateUsers $request)
     {
-        request()->validate([
-            "nombre" => "required",
-            "apellido" => "required",
-            "fechaNacimiento" => "required",
-            "direccion" => "required",
-            "dui" => "required",
-            "genero" => "required",
-            "telefono" => "required",
-            "email" => "required",
-            "password" => "required",
-            "role_id" => "required",
-        ]);
+        $request->validated();
         $user = request()->all();
         $user['password'] = bcrypt(request()->password);
         $user = User::create($user);
@@ -89,20 +79,9 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(User $user)
+    public function update(User $user,ValidateUsers $request)
     {
-        request()->validate([
-            "nombre" => "required",
-            "apellido" => "required",
-            "fechaNacimiento" => "required",
-            "direccion" => "required",
-            "dui" => "required",
-            "genero" => "required",
-            "telefono" => "required",
-            "email" => "required",
-            "password" => "required",
-            "role_id" => "required",
-        ]);
+        $request->validated();
         $user->update(request()->all());
         return redirect()->route('user.index')->with('success',' Usuario fue modificado!!');
     }

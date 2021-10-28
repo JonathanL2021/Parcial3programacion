@@ -19,10 +19,11 @@
             </tr>
         </thead>
         <tbody>
+            @php($index = 1)
             @forelse ($users as $user)
                 
             <tr>
-                <td>{{ $user->id }}</td>
+                <td>{{ $index ++ }}</td>
                 <td>{{ $user->nombre." ".$user->apellido }}</td>
                 <td>{{ $user->telefono }}</td>
                 <td>{{ $user->email }}</td>

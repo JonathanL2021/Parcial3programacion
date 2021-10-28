@@ -30,5 +30,11 @@ class CursoSeeder extends Seeder
             "ciclo" => 1,
             "user_id" => 2
         ]);
+        DB::table('cursos')->insert([
+            "nombreCurso" => "Programacion III",
+            "year" => 2021,
+            "ciclo" => 2,
+            "user_id" => 5
+        ]);
     }
 }

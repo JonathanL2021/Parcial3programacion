@@ -24,45 +24,7 @@ class NotaController extends Controller
                         ->get();
         return view('profesor.nota',compact('estudiantes'));
     }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Nota  $nota
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Nota $nota)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Nota  $nota
-     * @return \Illuminate\Http\Response
-     */
+    
     public function edit($nota)
     {
         $estudiantes = DB::table('matriculas')
@@ -73,14 +35,6 @@ class NotaController extends Controller
                         ->get();
         return view('profesor.edit',compact('estudiantes'));
     }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Nota  $nota
-     * @return \Illuminate\Http\Response
-     */
     public function update(Nota $nota,$curso_id)
     {
         $data = request()->all();
@@ -94,16 +48,5 @@ class NotaController extends Controller
 
 
         return redirect()->route('nota.index',$curso_id);
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Nota  $nota
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Nota $nota)
-    {
-        //
     }
 }

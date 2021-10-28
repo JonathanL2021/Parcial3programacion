@@ -21,10 +21,11 @@
             </tr>
         </thead>
         <tbody>
+            @php($index = 1)
             @foreach ($notas as $nota)
                 
             <tr>
-                <td>{{ $nota->id }}</td>
+                <td>{{ $index ++ }}</td>
                 <td>{{ $nota->nombreCurso }}</td>
                 <td align="end">{{ $nota->nota1 }}</td>
                 <td align="end">{{ $nota->nota2 }}</td>

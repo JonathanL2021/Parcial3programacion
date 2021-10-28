@@ -13,15 +13,15 @@ class UsuariosSeederTable extends Seeder
     public function run()
     {
         DB::table('users')->insert([
-            "nombre"=>"Jose",
-            "apellido" => "Deodanes",
+            "nombre"=>"Administrador",
+            "apellido" => "Rivas",
             "fechaNacimiento" => "2000-12-20",
             "direccion" => "San salvador",
             "dui" => "19239834-2",
             "genero" => "M",
             "telefono" => 7438945,
-            "email" => "josedeodanes@gmail.com",
-            "password" => bcrypt('jose'),
+            "email" => "admin@gmail.com",
+            "password" => bcrypt('admin'),
             "role_id" => 1,
         ]);
         DB::table('users')->insert([
@@ -32,8 +32,8 @@ class UsuariosSeederTable extends Seeder
             "dui" => "19239834-2",
             "genero" => "M",
             "telefono" => 7438945,
-            "email" => "docente@gmail.com",
-            "password" => bcrypt('jose'),
+            "email" => "docente1@gmail.com",
+            "password" => bcrypt('docente1'),
             "role_id" => 2,
         ]);
         DB::table('users')->insert([
@@ -44,8 +44,8 @@ class UsuariosSeederTable extends Seeder
             "dui" => "19239834-2",
             "genero" => "M",
             "telefono" => 7438945,
-            "email" => "estudiante@gmail.com",
-            "password" => bcrypt('jose'),
+            "email" => "estudiante1@gmail.com",
+            "password" => bcrypt('estudiante1'),
             "role_id" => 3,
         ]);
         DB::table('users')->insert([
@@ -56,9 +56,21 @@ class UsuariosSeederTable extends Seeder
             "dui" => "19239834-2",
             "genero" => "M",
             "telefono" => 7438945,
-            "email" => "estudiante1@gmail.com",
-            "password" => bcrypt('jose'),
+            "email" => "estudiante2@gmail.com",
+            "password" => bcrypt('estudiante2'),
             "role_id" => 3,
+        ]);
+        DB::table('users')->insert([
+            "nombre"=>"Jorge",
+            "apellido" => "Torres",
+            "fechaNacimiento" => "1993-12-20",
+            "direccion" => "San Vicente",
+            "dui" => "19239834-1",
+            "genero" => "M",
+            "telefono" => 7438945,
+            "email" => "docente2@gmail.com",
+            "password" => bcrypt('docente2'),
+            "role_id" => 2,
         ]);
     }
 }

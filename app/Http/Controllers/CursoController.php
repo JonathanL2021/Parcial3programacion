@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Curso;
+use App\Http\Requests\ValidateCursos;
 use App\User;
 use Illuminate\Http\Request;
 
@@ -40,14 +41,9 @@ class CursoController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ValidateCursos $request)
     {
-        request()->validate([
-            "nombreCurso" => "required",
-            "year" => "required",
-            "ciclo" => "required",
-            "user_id" => "required"
-        ]);
+        $request->validated();
         Curso::create(request()->all());
         return redirect()->route('curso.index')->with('success',' Curso agregado exitosamente!!');
     }
@@ -82,14 +78,9 @@ class CursoController extends Controller
      * @param  \App\Curso  $curso
      * @return \Illuminate\Http\Response
      */
-    public function update(Curso $curso)
-    {
-        request()->validate([
-            "nombreCurso" => "required",
-            "year" => "required",
-            "ciclo" => "required",
-            "user_id" => "required"
-        ]);
+    public function update(Curso $curso,ValidateCursos $request)
+    {   
+        $request->validated();
         $curso->update(request()->all());
 
         return redirect()->route('curso.index')->with('success',' Curso actualizado!!');

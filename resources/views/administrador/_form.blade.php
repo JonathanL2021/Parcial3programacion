@@ -78,8 +78,8 @@
             @else
             <option value="">Genero</option>
             @endif
-            <option value="M">M</option>
-            <option value="F">F</option>
+            <option value="M">Masculino</option>
+            <option value="F">Femenino</option>
         </select>
 
         @error('genero')

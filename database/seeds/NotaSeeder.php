@@ -44,5 +44,13 @@ class NotaSeeder extends Seeder
             "parcial" => 9,
             "promedio" => 8.5,
         ]);
+        DB::table('notas')->insert([
+            "nota1" => 10,
+            "nota2" => 9.5,
+            "nota3" => 10,
+            "nota4" => 0,
+            "parcial" => 0,
+            "promedio" => 5.90,
+        ]);
     }
 }
