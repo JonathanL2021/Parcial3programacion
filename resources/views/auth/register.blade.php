@@ -86,7 +86,7 @@
 
                             <div class="col-md-6">
                                 <select name="genero"class="form-control">
-                                    <option value="">Genero</option>
+                                    <option value="">GENERO</option>
                                     <option value="M">M</option>
                                     <option value="F">F</option>
                                 </select>

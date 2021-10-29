@@ -3,21 +3,21 @@
 @section('content')
 <div class="container">
     <div class="d-flex justify-content-between align-items-center">
-        <h1>Apartado de notas</h1>
-        <a href="{{ route('estudiante.index') }}" class="btn">Regresar</a>
+        <h1>NOTAS DE ESTUDIANTES</h1>
+        <a href="{{ route('estudiante.index') }}" class="btn">REGRESAR</a>
     </div>
     <table class="table table-responsive-sm table-striped" id="table_notas">
         <thead>
             <tr>
                 <th>#</th>
-                <th>Asignatura</th>
-                <th>Nota 1</th>
-                <th>Nota 2</th>
-                <th>Nota 3</th>
-                <th>Nota 4</th>
-                <th>Parcial</th>
-                <th>Promedio</th>
-                <th>Estado</th>
+                <th>ASIGNATURA</th>
+                <th>NOTA 1</th>
+                <th>NOTA 2</th>
+                <th>NOTA 3</th>
+                <th>NOTA 4</th>
+                <th>EXAMEN</th>
+                <th>PROMEDIO</th>
+                <th>ESTADO</th>
             </tr>
         </thead>
         <tbody>

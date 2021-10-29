@@ -1,6 +1,6 @@
 <footer class="bg-dark mt-5">
     <div class="footer-content py-3">
-        <p class="text-center m-0 text-light">Dev. Josè Deodanes</p>
+        <p class="text-center m-0 text-light">CECMOJOC 2021</p>
     </div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

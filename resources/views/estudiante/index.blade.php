@@ -2,19 +2,19 @@
 @section('title','Estudiante')
 @section('content')
 <div class="container">
-    <h1>Apartado de estudiante</h1>
+    <h1>ESTUDIANTES DEL CURSO</h1>
 
     <div class="d-flex justify-content-between my-3">
-        <h3>Asignaturas</h3>
+        <h3>MATERIAS ASIGNADAS</h3>
         <a class="btn btn-outline-success" href="{{ route('estudiante.show') }}">Ver notas</a>
     </div>
     <table class="table table-responsive-sm table-striped" id="table_id">
         <thead>
             <tr>
                 <th>#</th>
-                <th>Cursos</th>
-                <th>Ciclo</th>
-                <th align="end">Acciones</th>
+                <th>CURSOS</th>
+                <th>CICLO</th>
+                <th align="end">ACCIONES</th>
             </tr>
         </thead>
         <tbody>

@@ -3,19 +3,19 @@
 @section('content')
 <div class="container">
     <div class="d-flex justify-content-between">
-        <h2>Usuarios en el sistema de notas</h2>
+        <h2>USUARIOS DEL SISTEMA DE NOTAS</h2>
         <a class="btn btn-outline-success mb-3" href="{{ route('user.create') }}"><i class="fas fa-user-plus"></i></a>
     </div>
     <table class="table table-responsive-sm" id="table_usuario">
         <thead>
             <tr>
                 <th>#</th>
-                <th>Nombre completo</th>
-                <th>Telefono</th>
-                <th>Email</th>
+                <th>NOMBRES APELLIDOS</th>
+                <th>CELULAR</th>
+                <th>CORREO</th>
                 <th>DUI</th>
-                <th>Rol</th>
-                <th>Acciones</th>
+                <th>ROL</th>
+                <th>ACCIONES</th>
             </tr>
         </thead>
         <tbody>

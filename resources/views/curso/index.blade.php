@@ -3,12 +3,12 @@
 
 @section('content')
 <div class="container">
-    <h1 class="text-center text-dark py-3">Sección de cursos</h1>
+    <h1 class="text-center text-dark py-3">SECCION DE CURSOS</h1>
     <div class="row">
         <div class="col-12 col-md-6">
             <div class="card">
                 <div class="card-header">
-                    <h4>Agregar curso</h4>
+                    <h4>INSCRIBIRSE AL CURSO</h4>
                 </div>
                 <div class="card-body">
                     <form action="{{ route('curso.store') }}" method="POST">
@@ -42,10 +42,10 @@
                 <thead align="center" class="thead-dark">
                     <tr>
                         <th>#</th>
-                        <th>Cursos</th>
-                        <th>Ciclo - Año</th>
-                        <th>Profesor</th>
-                        <th>Acciones</th>
+                        <th>CURSOS</th>
+                        <th>CICLO - AÑO</th>
+                        <th>PROFESOR</th>
+                        <th>ACCIONES</th>
                     </tr>
                 </thead>
                 <tbody>

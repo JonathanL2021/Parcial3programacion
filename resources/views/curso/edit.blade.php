@@ -8,7 +8,7 @@
     <div class="col-md-5 m-auto">
         <div class="card">
         <div class="card-header">
-            <h4>Actualizar el curso</h4>
+            <h4>AZTUALIZAR CURSO</h4>
         </div>
         <div class="card-body">
             <form action="{{ route('curso.update',$curso) }}" method="POST">

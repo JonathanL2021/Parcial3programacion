@@ -3,7 +3,7 @@
     .login-img{
         height: 80vh;
         width: 100%;
-        background-image: url('https://www.co-dex.eu/wp-content/uploads/2020/12/undraw_secure_login_pdn4.png');
+        background-image: url ('https://img.icons8.com/external-bearicons-blue-bearicons/64/000000/external-login-call-to-action-bearicons-blue-bearicons-1.png');
         background-attachment: fixed;
         background-repeat: no-repeat;
     }
